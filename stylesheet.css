@@ -57,17 +57,18 @@ body {
     background-color:  #4144e7;
 }
 
-.notification img {
+.notification {
     position: relative;
-    display: block;
 }
 
-.notification img::after {
-    content: "";
+.notification::after {
     position: absolute;
-    top: 0;
-    right: 0;
+    content: "";
+    background-color: red;
+    color: #ffffff;
+    top: 15px;
     width: 10px;
     height: 10px;
-    background-color: red;
+    font-size: 10px;
+    border-radius: 100px;
 }

@@ -1,0 +1,42 @@
+body {
+    font-family: Poppins;
+    font-size: 16px;
+}
+
+.wrapper {
+    cursor: pointer;
+    padding: 20px;
+    border: solid 1px #000000;
+    border-radius: 20px;
+    width: 35px;
+    overflow: hidden;
+    word-wrap: break-word;
+    transition: all 300ms ease-in-out 100ms;
+}
+
+.wrapper:hover {
+    width: 250px;
+}
+
+/* .profile-pic img {
+    width: 40px !important;
+} */
+
+.opt {
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+}
+
+.opt img {
+    width: 25px;
+}
+
+.opt p {
+    transform: translateX(20px);
+    transition: all 500ms ease-in-out 100ms;
+}
+
+.wrapper:hover .opt p {
+    transform: translateX(0px);
+}

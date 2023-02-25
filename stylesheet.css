@@ -1,14 +1,18 @@
 body {
     font-family: Poppins;
     font-size: 16px;
+    padding: 0%;
+    margin: 1vh;
 }
 
 .wrapper {
-    cursor: pointer;
+    cursor: default;
     padding: 20px;
     border: solid 1px #000000;
     border-radius: 20px;
+    background-color: #00000027;
     width: 35px;
+    height: 93vh;
     overflow: hidden;
     word-wrap: break-word;
     transition: all 300ms ease-in-out 200ms;
@@ -18,43 +22,65 @@ body {
     width: 200px;
 }
 
+.wrapper:hover .opt p {
+    transform: translateX(15px);
+}
+
 .profile-pic p {
+    font-size: 20px;
     font-weight: 700;
 }
 
 .opt {
     display: flex;
-    gap: 20px;
-    justify-content: start;
-    margin-block: 10px;
-    transition: all 200ms ease-in-out 100ms;
-}
-
-.opt img {
-    width: 25px;
-}
-
-.opt p {
-    transform: translateX(20px);
+    align-items: center;
     transition: all 500ms ease-in-out 150ms;
 }
 
-.wrapper:hover .opt {
-    padding-inline: 15px;
-    border-radius: 15px;
+img {
+    width: 25px;
 }
 
-.wrapper:hover .opt p {
-    transform: translateX(0px);
+.opt {
+    margin-block: 10px;
+    cursor: pointer;
 }
 
 .menu {
-    background-color: transparent;
-    transition: all 200ms ease-in-out 100ms;
+    margin-left: -10px;
 }
 
-.menu:hover {
-    background-color:  #4144e7;
+.opt p {
+    transform: translateX(60px);
+    transition: all 400ms ease-in-out 100ms;
+    align-items: center;
+}
+
+label {
+    display: flex;
+    cursor: pointer;
+    width: 10%;
+    padding-inline: 15px;
+    background-color: transparent;
+    transition: all 300ms ease-in-out 100ms;
+}
+
+.hide {
+    display: none;
+}
+
+label:hover {
+    background-color: #bbbbbb;
+    border-radius: 15px;
+    width: 100%;
+}
+
+input[type="radio"]:checked ~ label {
+    background-color: #4144e7;
+    cursor: pointer;
+    width: 60%;
+    padding-inline: 15px;
+    border-radius: 15px;
 }
 
 .notification {
@@ -67,8 +93,9 @@ body {
     background-color: red;
     color: #ffffff;
     top: 15px;
+    left: 10px;
     width: 10px;
     height: 10px;
     font-size: 10px;
-    border-radius: 100px;
+    border-radius: 100%;
 }

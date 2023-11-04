@@ -2,9 +2,14 @@ body {
     font-family: Poppins;
     font-size: 16px;
     padding: 0%;
+    /* margin: 1vh;
+    display: flex; */
+    /* overflow: hidden; */
+}
+
+.body__wrapper {
     margin: 1vh;
     display: flex;
-    overflow: hidden;
 }
 
 .wrapper {
@@ -102,4 +107,20 @@ input[type="radio"]:checked ~ label {
     height: 10px;
     font-size: 10px;
     border-radius: 100%;
+}
+
+section {
+    min-height: 50vh;
+}
+
+.top {
+    background-color: #000fff;
+}
+
+.one {
+    background-color: #ff00ff;
+}
+
+.two {
+    background-color: #00ff00;
 }
